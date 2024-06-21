@@ -41,7 +41,9 @@ SOFTWARE.
 #include "function.h"
 #include "nullptr.h"
 
+#if ETL_IS_DEBUG_BUILD
 #include <assert.h>
+#endif // ETL_IS_DEBUG_BUILD
 
 #if defined(ETL_LOG_ERRORS) || defined(ETL_IN_UNIT_TEST)
 namespace etl
